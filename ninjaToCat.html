@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+  <style>
+ #images {
+ 	margin-top: 80px;
+ }
+
+ #images img{
+ 	display: block;
+ 	width: 230px;
+ 	height: 80px;
+ 	margin-left: 320px;
+
+ }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){ 
+  		$("#image1").click(function(){ 
+  			if($("#image1").attr("src") == "img/cat0.png"){
+				$("#image1").attr("src", "img/ninja0.png");
+				} 
+			else{
+				$("#image1").attr("src", "img/cat0.png")
+				};
+			});
+  		$("#image2").click(function(){ 
+  			if($("#image2").attr("src") == "img/cat1.png"){
+				$("#image2").attr("src", "img/ninja1.png");
+				} 
+			else{
+				$("#image2").attr("src", "img/cat1.png")
+				};
+			});
+  		$("#image3").click(function(){ 
+  			if($("#image3").attr("src") == "img/cat2.png"){
+				$("#image3").attr("src", "img/ninja2.png");
+				} 
+			else{
+				$("#image3").attr("src", "img/cat2.png")
+				};
+			});
+  		$("#image4").click(function(){ 
+  			if($("#image4").attr("src") == "img/cat3.png"){
+				$("#image4").attr("src", "img/ninja3.png");
+				} 
+			else{
+				$("#image4").attr("src", "img/cat3.png")
+				};
+			});
+  		$("#image5").click(function(){ 
+  			if($("#image5").attr("src") == "img/cat4.png"){
+				$("#image5").attr("src", "img/ninja4.png");
+				} 
+			else{
+				$("#image5").attr("src", "img/cat4.png")
+				};
+			});
+    }); 
+  //    $(document).ready(function(){
+  
+  
+  // });
+</script>
+</head>
+<body>
+
+	
+	<div id="wrapper">
+		<!-- <img src="img/cat0.png" data-alt-src="img/ninja0.png"/> -->
+		<div id="images">
+		 <img id="image1" src="img/cat0.png" src="img/ninja0.png" alt="cat"/>
+		 <img id="image2" src="img/cat1.png" src="img/ninja1.png" alt="cat"/>
+		 <img id="image3" src="img/cat2.png" src="img/ninja2.png" alt="cat"/>
+		 <img id="image4" src="img/cat3.png" src="img/ninja3.png" alt="cat"/>
+		 <img id="image5" src="img/cat4.png" src="img/ninj4.png" alt="cat"/>
+		</div>
+		  
+    </div>
+ 
+</body>
+</html>
